@@ -44,8 +44,8 @@ int main (int argc, char *argv[]){
  ofstream filemisure2;
  filemisure2.open("misure2p.dat");
  
- int N=5000;
- int M=5000000;
+ int N=2000;
+ int M=2000000;
  //int L=M/N;
  double x, y, z; 
  double xb, yb, zb;

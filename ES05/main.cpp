@@ -45,8 +45,8 @@ int main (int argc, char *argv[]){
  filemisure2.open("misure2p.dat");
  
  
- int N=5000;		//lunghezza blocco
- int M=5000000;
+ int N=2000;		//lunghezza blocco
+ int M=2000000;
  //int L=M/N;
  double x, y, z; 
  double xb, yb, zb;
