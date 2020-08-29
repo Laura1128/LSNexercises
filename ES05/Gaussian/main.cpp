@@ -44,8 +44,8 @@ int main (int argc, char *argv[]){
  ofstream filemisure2;
  filemisure2.open("misure2p.dat");
  
- int N=2000;
- int M=2000000;
+ int N=5000;
+ int M=5000000;
  //int L=M/N;
  double x, y, z; 
  double xb, yb, zb;
@@ -93,7 +93,7 @@ int main (int argc, char *argv[]){
 		}else{
 			nope++;
 		}
-		fileout << x <<" "<< y <<" "<< z <<endl;
+		if(i%5==0){fileout << x <<" "<< y <<" "<< z <<endl;}
 		raggio=sqrt(pow(x,2.)+pow(y,2.)+pow(z,2.))/a;
 	        sum+=raggio;
 		if(r <= alpha2){
@@ -105,7 +105,7 @@ int main (int argc, char *argv[]){
 		}else{
 			nopeb++;
 		}
-		fileout2 << xb <<" "<< yb <<" "<< zb <<endl;
+		if(i%5==0){fileout2 << xb <<" "<< yb <<" "<< zb <<endl;}
 	        raggio2=sqrt(pow(xb,2.)+pow(yb,2.)+pow(zb,2.))/a;
 	        sum2+=raggio2;
 
